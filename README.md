@@ -1,4 +1,4 @@
-# Bookmarker 📚 - A Simple JavaScript CRUD App
+# Bookmarker 🔖 - A Simple JavaScript CRUD App
 Bookmarker is a user-friendly web application that allows you to easily save, view, edit, and delete your favorite websites in one convenient place. Built using fundamental JavaScript concepts, this project showcases my skills in working with functions, objects, arrays, array methods, JSON methods, if statements, loops, and local storage. To enhance the visual appeal, I utilized the popular Bootstrap CSS framework for styling.
 
 # Features 🌟
