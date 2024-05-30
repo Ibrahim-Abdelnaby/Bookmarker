@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the ultimate website organizer, Bookmarker. Effortlessly save and access all your favorite websites in one convenient place. Say goodbye to scattered bookmarks and experience the power of a personalized website library that remembers your most frequently visited sites.">
+    <meta name="keywords" content="website organizer, bookmark manager, favorite websites, website library, online bookmarks, website organization, website storage, website collection">
+    <meta name="auther" content="Ibrahim Abdelnaby">
+    <title>Bookmarker |     .</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main class="min-vh-100">
+        <div class="container">
+            <!-- Add Bookmark Card -->
+            <div class="card-wrapper form-style" id="cardWrapper">
+                <div class="container d-flex justify-content-center align-items-center">
+                    <div class="card p-5 border-0 shadow-md rounded-4 position-relative">
+                        <div class="close" id="closeIcon">
+                            <i class="fa fa-solid fa-close fa-xl" onclick="hidePopup()"></i>
+                        </div>
+                        <div class="card-header bg-transparent border-bottom-0 mb-4">
+                            <h5 class="card-title text-center display-5 fw-bolder" id="cardTitle">Add Bookmark</h5>
+                            <p class="card-subtitle text-secondary text-center">Store, access, and manage your go-to online destinations in one place</p>
+                        </div>
+                        <section>
+                            <div class="card-body">
+                                <label for="siteName" class="fw-semibold mb-1">Website Name</label>
+                                <input class="form-control rounded-0 p-3 mb-3" type="text" placeholder="Ex: Google" name="siteName" id="siteName">
+                                <label for="siteUrl" class="fw-semibold mb-1">URL</label>
+                                <input class="form-control rounded-0 p-3" type="text" placeholder="Ex: www.google.com" name="siteUrl" id="siteUrl">
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0">
+                                <button class="btn btn-primary w-100 rounded-0 fw-semibold fs-5" onclick="addBookmark()" id="addBtn"><i class="fa-solid fa-plus fa-sm me-2"></i> Add Bookmark</button>
+                                <button class="btn btn-primary rounded-0 fw-semibold fs-5 w-100 d-none" onclick="saveChanges()" id="saveBtn"><i class="fa-regular fa-bookmark fa-sm me-2"></i> Save Changes</button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header -->
+            <div class="table-wrapper py-5" id="tableWrapper">
+                <header class="row d-flex justify-content-between align-items-center mb-5">
+                    <div class="col-md-8 col-lg-9 title">
+                        <h1 class="display-5 fw-bolder m-0">Bookmarker</h1>
+                        <p class="text-secondary fs-5">Book mark your favorite sites in one place.</p>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <button class="btn btn-primary rounded-0 fw-semibold fs-5 w-100" onclick="showPopup()"><i class="fa-solid fa-plus fa-sm me-2" id="saveIcon"></i> Add Bookmark</button>
+                    </div>
+                </header>
+
+                <!-- Page Table -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="search rounded-top-4 px-2 py-2 bg-white">
+                            <div class="form-floating">
+                                <input oninput="searchBookmark()" class="form-control rounded-0 w-100 border-0 shadow-none bg-white" type="search" class="form-control" id="search" placeholder="name@example.com">
+                                <label for="search" class="text-secondary"><i class="fa-solid fa-magnifying-glass me-2"></i>Search for Bookmarks:</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="table-responsive">
+                            <table class="table table-hover shadow-md align-middle">
+                                <thead class="w-100">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Website Name</th>
+                                        <th scope="col">Website URL</th>
+                                        <th scope="col" class="text-center">Visit</th>
+                                        <th scope="col" class="text-center">Delete</th>
+                                        <th scope="col" class="text-center">Update</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tableBody">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- <script src="assets/js/index.js"></script> -->
+    <script src="assets/js/test.js"></script>
+</body>
+
+</html>

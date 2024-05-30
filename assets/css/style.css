@@ -1,0 +1,109 @@
+:root {
+    --bg-color: #F2F2F2;
+    --btn-color: #8758FF;
+    --delete-color: #FF0000;
+    --update-color: #41B06E;
+}
+
+main {
+    background-color: var(--bg-color);
+}
+
+.container,
+.card-wrapper,
+.table-wrapper {
+    min-height: inherit;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--btn-color);
+    --bs-btn-border-color: var(--btn-color);
+    --bs-btn-hover-bg: #7a4fe5;
+    --bs-btn-hover-border-color: #7a4fe5;
+    --bs-btn-active-bg: #714ad4;
+    --bs-btn-active-border-color: #714ad4;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(113, 74, 212, 0.125);
+    padding: 1rem 0;
+}
+.text-primary {
+    color: var(--btn-color) !important;
+}
+.table {
+    --bs-table-hover-bg: rgba(135, 88, 255, 0.05);
+}
+/* tbody, td, tfoot, th, thead, tr  */
+tr.no-border {
+    border: none;
+    border-color: transparent;
+}
+.table i {
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.table i:hover {
+    transform: scale(1.3);
+}
+
+h1::before {
+    content: '';
+    display: inline-flex;
+    margin-right: 0.5rem;
+    width: 25px;
+    height: 35px;
+    background-image: url('../images/bookmarkIcon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.rounded-top-left {
+    border-top-left-radius: 0.8rem;
+}
+.rounded-top-right {
+    border-top-right-radius: 0.8rem;
+}
+thead tr > * {
+    padding: 1.5rem !important;
+}
+tbody tr > * {
+    padding: 1.5rem !important;
+}
+.search {
+    border-bottom: 1px solid #ddd;
+}
+.card-wrapper .form-control:focus {
+    border-color: var(--btn-color);
+    box-shadow: 0 0 0 .25rem rgba(135, 88, 255, 0.25);
+}
+.d-none {
+    display: none;
+}
+.form-style {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.close {
+    position: absolute;
+    top: 2rem;
+    right: 2.5rem;
+    cursor: pointer;
+    color: var(--btn-color);
+    opacity: 0.25;
+    transition: 0.3s;
+}
+.close:hover {
+    opacity: 1;
+}
+.cursor {
+    cursor: pointer;
+}
+input::placeholder {
+    opacity: 0.6 !important;
+}
+.card {
+    width: fit-content;
+}
+#tableBody>:last-child {
+    border-bottom: transparent !important;
+}
