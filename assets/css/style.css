@@ -107,3 +107,13 @@ input::placeholder {
 #tableBody>:last-child {
     border-bottom: transparent !important;
 }
+@media (max-width: 576px) {
+    .card {
+        padding: 2rem 1rem !important;
+    }
+    .close {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+}
