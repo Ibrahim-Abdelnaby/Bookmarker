@@ -18,7 +18,7 @@ Bookmarker is a user-friendly web application that allows you to easily save, vi
 1- Clone the repository: git clone https://github.com/your-username/Bookmarker.git
 2- Open the index.html file in your web browser to launch the application.
 
-Screenshot 📷
+# Screenshot 📷
 ![bookmarker-screenshot](https://github.com/Ibrahim-Abdelnaby/Bookmarker/assets/110410490/1e84f1e6-bcdf-44db-8378-5b4294252cc2)
 
 # Future Improvements 🔜
