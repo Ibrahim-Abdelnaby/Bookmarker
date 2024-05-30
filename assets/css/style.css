@@ -116,4 +116,7 @@ input::placeholder {
         top: 1.5rem;
         right: 1.5rem;
     }
+    .card-header {
+        margin-bottom: 1rem !important;
+    }
 }
